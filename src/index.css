@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+@import "tailwindcss";
+
+
+@theme{
+  --color-dark-gray: oklch(0.2101 0.0318 264.66)
+}
+/* geist-sans-latin-400-normal */
+@font-face {
+  font-family: 'Geist Sans';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(@fontsource/geist-sans/files/geist-sans-latin-400-normal.woff2) format('woff2'),
+      url(@fontsource/geist-sans/files/geist-sans-latin-400-normal.woff) format('woff');
+}
+
+body {
+  font-family: "Geist Mono", 'Geist Sans';
+  background-color: var(--color-dark-gray);
+}
