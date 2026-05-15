@@ -45,10 +45,10 @@ function Identity() {
                       <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
                     <a
-                      href="mailto:john.doe@example.com"
+                      href="mailto:zakyabiyyu2003@gmail.com"
                       className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
                     >
-                      john.doe@example.com
+                      zakyabiyyu2003@gmail.com
                     </a>
                   </div>
                   <div className="flex items-center justify-center space-x-2">
@@ -63,12 +63,12 @@ function Identity() {
                       <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                     </svg>
                     <span className="text-sm text-gray-600 dark:text-gray-400">
-                      San Francisco, CA
+                      Yogyakarta, ID
                     </span>
                   </div>
                   <div className="flex items-center justify-center space-x-4 pt-2">
                     <a
-                      href="https://github.com"
+                      href="https://github.com/zesciati"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
@@ -83,7 +83,7 @@ function Identity() {
                       </svg>
                     </a>
                     <a
-                      href="https://linkedin.com"
+                      href="https://www.linkedin.com/in/zaky-abiyyu-andri-390b21281/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"

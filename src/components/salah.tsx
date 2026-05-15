@@ -23,7 +23,7 @@ function App() {
               </div>
               <div className="h-px w-16 bg-gray-200 mx-auto my-4"></div>
               <div className="text-sm text-gray-600 max-w-xs mx-auto leading-relaxed">
-                Web developer with frontend and backend experience{" "}
+                Web developer with frontend and backend experience
               </div>
             </div>
             <div className="space-y-4">
