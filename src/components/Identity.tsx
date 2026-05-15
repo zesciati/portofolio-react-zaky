@@ -105,6 +105,7 @@ function Identity() {
           <div className="md:col-span-3 flex flex-col md:justify-center">
             <CoreSkill />
             <Experience />
+            
           </div>
         </div>
       </main>

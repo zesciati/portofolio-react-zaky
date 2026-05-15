@@ -26,7 +26,7 @@ const experiences: Experience[] = [
     endYear: "Present",
     description:
       "Designing Frontend admin website for JIH Hospital & making testcase for employee mobile application ",
-  }
+  },
   
 ];
 
@@ -43,7 +43,7 @@ function Experience() {
           </div>
           <div className="space-y-5">
             {experiences
-            .sort((a, b) => b.id - a.id)
+            .sort((a, b) => b.id - a.id) //ID Logic
             .map((exp) => (
               <div className="relative" key={exp.id}>
                 <div className="relative pl-4 border-l-2 border-gray-200 dark:border-gray-700">
