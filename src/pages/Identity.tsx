@@ -1,9 +1,9 @@
 import "../index.css";
 import FaceZaky from "../assets/pixelimage.png";
 import PdfCvZaky from "../assets/CV-ZAKY-1.pdf";
-import CoreSkill from "./CoreSkill";
-import Experience from "./Experience";
-import Projects from "./Projects";
+import CoreSkill from "../components/CoreSkill";
+import Experience from "../components/Experience";
+import Projects from "../components/Projects";
 import { useState } from "react";
 
 function Identity() {
