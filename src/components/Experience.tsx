@@ -28,6 +28,7 @@ const experiences: Experience[] = [
       "Designing Frontend admin website for JIH Hospital & making testcase for employee mobile application ",
   },
   
+  
 ];
 
 function Experience() {

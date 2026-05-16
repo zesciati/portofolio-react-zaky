@@ -1,5 +1,5 @@
 import "../index.css";
-import faceJurica from "../assets/jurica-koletic-7YVZYZeITc8-unsplash (4).png";
+import faceZaky from "../assets/pixelimage.png";
 import CoreSkill from "./CoreSkill";
 import Experience from "./Experience";
 import { useState } from "react";
@@ -16,16 +16,17 @@ function Identity() {
         className={isLight ? "" : "dark min-h-screen bg-gray-900 text-white"}
       >
         <main className="min-h-screen md:h-screen flex flex-col bg-olive-300 dark:bg-gray-900 pb-16 sm:pb-0">
-          <button onClick={toggleTheme} className="absolute right-0">Toggle dark</button>
+          <button onClick={toggleTheme} className="absolute right-0">
+            Toggle dark
+          </button>
           <div className="flex-1 grid grid-cols-1 md:grid-cols-5">
             <div className="md:col-span-2 border-b md:border-b-0 md:border-r border-gray-200 dark:border-gray-800 md:flex md:items-center">
               <div className="w-full py-8 md:py-0 bg-olive-300 dark:bg-gray-900 px-6 pt-16 sm:pt-0">
                 <div className="space-y-8 text-center">
                   <div className="relative w-28 md:w-40 h-28 md:h-40 mx-auto">
                     <div className="relative w-full h-full rounded-full overflow-hidden ring-2 ring-gray-200 dark:ring-gray-700">
-                      {" "}
                       <img
-                        src={faceJurica}
+                        src={faceZaky}
                         alt="Profile"
                         className="object-cover"
                       />
@@ -106,6 +107,31 @@ function Identity() {
                         >
                           <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
                         </svg>
+                      </a>
+                    </div>
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 opacity-75 transform-none">
+                      <a
+                        href="#"
+                        className="group flex items-center gap-2 px-6 py-3 bg-white/25 dark:bg-white/5 rounded-full hover:bg-white/30 dark:hover:bg-white/10 transition-colors w-full sm:w-auto "
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          className="size-4 text-gray-700 dark:text-gray-300"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
+                          />
+                        </svg>
+
+                        <span className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                          View Resume
+                        </span>
                       </a>
                     </div>
                   </div>
