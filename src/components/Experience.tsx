@@ -33,7 +33,7 @@ const experiences: Experience[] = [
 function Experience() {
   return (
     <div>
-      <div className="py-6 bg-white dark:bg-gray-900 px-6">
+      <div className="py-6 bg-olive-400 dark:bg-gray-900 px-6">
         <div className="space-y-4 max-w-2xl mx-auto">
           <div>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white text-center md:text-left">

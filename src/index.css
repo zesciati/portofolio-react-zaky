@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme{
-  --color-dark-gray: oklch(0.2101 0.0318 264.66)
+  --color-dark-gray: oklch(0.2101 0.0318 264.66);
+  --color-primary: #3b82f6; 
+  --color-primary-dark:#9DA2AF;
 }
 /* geist-sans-latin-400-normal */
 @font-face {
@@ -17,5 +20,4 @@
 
 body {
   font-family: "Geist Mono", 'Geist Sans';
-  background-color: var(--color-dark-gray);
 }

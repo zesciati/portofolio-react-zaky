@@ -13,7 +13,7 @@ const tools = [
 function CoreSkill() {
   return (
     <div className="">
-      <div className="py-6 bg-white dark:bg-gray-900 px-6">
+      <div className="py-6 bg-olive-400 dark:bg-gray-900 px-6">
         <div className="space-y-4 max-w-2xl mx-auto">
           <div>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white text-center md:text-left">
@@ -24,15 +24,30 @@ function CoreSkill() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <div className="flex items-center space-x-2 mb-2">
-                <svg
-                  className="w-4 h-4"
+                {/* <svg
+                  className="w-4 h-4 "
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="#9DA2AF"
+                  stroke="#FFFFFF"
                   stroke-width="2"
                 >
                   <path d="M8 3v3a2 2 0 01-2 2H3m18 0h-3a2 2 0 01-2-2V3M3 16v3a2 2 0 002 2h3m8-2h3a2 2 0 002-2v-3"></path>
+                </svg> */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="size-4 text-gray-700 dark:text-gray-300"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"
+                  />
                 </svg>
+
                 <h4 className="text-sm font-medium text-gray-600 dark:text-gray-400">
                   Languages
                 </h4>
@@ -47,15 +62,31 @@ function CoreSkill() {
             </div>
             <div>
               <div className="flex items-center space-x-2 mb-2">
-                <svg
+                {/* <svg
                   className="w-4 h-4"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="#9DA2AF"
+                  stroke="#FFFFFF"
                   stroke-width="2"
                 >
                   <path d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2"></path>
+                </svg> */}
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="size-4 text-gray-700 dark:text-gray-300"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"
+                  />
                 </svg>
+
                 <h4 className="text-sm font-medium text-gray-600 dark:text-gray-400">
                   Backend
                 </h4>
@@ -76,7 +107,7 @@ function CoreSkill() {
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  className="size-4 text-gray-400"
+                  className="size-4 text-gray-700 dark:text-gray-300"
                 >
                   <path
                     stroke-linecap="round"
