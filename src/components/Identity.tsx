@@ -1,5 +1,6 @@
 import "../index.css";
-import faceZaky from "../assets/pixelimage.png";
+import FaceZaky from "../assets/pixelimage.png";
+import PdfCvZaky from "../assets/CV-ZAKY-1.pdf";
 import CoreSkill from "./CoreSkill";
 import Experience from "./Experience";
 import { useState } from "react";
@@ -16,8 +17,41 @@ function Identity() {
         className={isLight ? "" : "dark min-h-screen bg-gray-900 text-white"}
       >
         <main className="min-h-screen md:h-screen flex flex-col bg-olive-300 dark:bg-gray-900 pb-16 sm:pb-0">
-          <button onClick={toggleTheme} className="absolute right-0">
-            Toggle dark
+          <button
+            onClick={toggleTheme}
+            className="fixed right-8 top-4 border rounded-full"
+          >
+            {isLight ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="size-7"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="size-7"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                />
+              </svg>
+            )}
           </button>
           <div className="flex-1 grid grid-cols-1 md:grid-cols-5">
             <div className="md:col-span-2 border-b md:border-b-0 md:border-r border-gray-200 dark:border-gray-800 md:flex md:items-center">
@@ -26,7 +60,7 @@ function Identity() {
                   <div className="relative w-28 md:w-40 h-28 md:h-40 mx-auto">
                     <div className="relative w-full h-full rounded-full overflow-hidden ring-2 ring-gray-200 dark:ring-gray-700">
                       <img
-                        src={faceZaky}
+                        src={FaceZaky}
                         alt="Profile"
                         className="object-cover"
                       />
@@ -111,7 +145,8 @@ function Identity() {
                     </div>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 opacity-75 transform-none">
                       <a
-                        href="#"
+                        href={PdfCvZaky}
+                        download=""
                         className="group flex items-center gap-2 px-6 py-3 bg-white/25 dark:bg-white/5 rounded-full hover:bg-white/30 dark:hover:bg-white/10 transition-colors w-full sm:w-auto "
                       >
                         <svg
@@ -144,6 +179,150 @@ function Identity() {
             </div>
           </div>
         </main>
+          <section className="antialiased">
+            <div className="min-h-screen text-white bg-olive-300 dark:bg-gray-900 border-t">
+            <section className="py-12 md:py-20 px-4 max-w-7xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center opacity-100">
+                Featured Projects
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* E-Commerce Platform */}
+                <div className="group relative aspect-video bg-linear-to-br from-purple-900/50 to-blue-900/50 rounded-xl overflow-hidden opacity-100">
+                  <img
+                    alt="E-Commerce Platform"
+                    loading="lazy"
+                    decoding="async"
+                    className="object-cover transition-transform group-hover:scale-105 absolute h-full w-full inset-0"
+                    src="/_next/image?url=%2Fcode.jpg&w=3840&q=75"
+                  />
+                  <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-300"></div>
+                  <div className="absolute inset-0 p-6 flex flex-col justify-end">
+                    <h3 className="text-xl font-bold mb-2">
+                      E-Commerce Platform
+                    </h3>
+                    <p className="text-gray-300 mb-4">
+                      A modern e-commerce platform built with Next.js and Stripe
+                    </p>
+                    <div className="flex gap-4">
+                      <a
+                        className="text-sm px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+                        href="#"
+                      >
+                        View Project
+                      </a>
+                      <a
+                        className="text-sm px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+                        href="#"
+                      >
+                        GitHub
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* AI Chat Application */}
+                <div className="group relative aspect-video bg-linear-to-br from-purple-900/50 to-blue-900/50 rounded-xl overflow-hidden opacity-100">
+                  <img
+                    alt="AI Chat Application"
+                    loading="lazy"
+                    decoding="async"
+                    className="object-cover transition-transform group-hover:scale-105 absolute h-full w-full inset-0"
+                    src="/_next/image?url=%2Flaptop.jpg&w=3840&q=75"
+                  />
+                  <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-300"></div>
+                  <div className="absolute inset-0 p-6 flex flex-col justify-end">
+                    <h3 className="text-xl font-bold mb-2">
+                      AI Chat Application
+                    </h3>
+                    <p className="text-gray-300 mb-4">
+                      Real-time chat application powered by OpenAI
+                    </p>
+                    <div className="flex gap-4">
+                      <a
+                        className="text-sm px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+                        href="#"
+                      >
+                        View Project
+                      </a>
+                      <a
+                        className="text-sm px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+                        href="#"
+                      >
+                        GitHub
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Task Management */}
+                <div className="group relative aspect-video bg-linear-to-br from-purple-900/50 to-blue-900/50 rounded-xl overflow-hidden opacity-100">
+                  <img
+                    alt="Task Management"
+                    loading="lazy"
+                    decoding="async"
+                    className="object-cover transition-transform group-hover:scale-105 absolute h-full w-full inset-0"
+                    src="/_next/image?url=%2Fcode.jpg&w=3840&q=75"
+                  />
+                  <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-300"></div>
+                  <div className="absolute inset-0 p-6 flex flex-col justify-end">
+                    <h3 className="text-xl font-bold mb-2">Task Management</h3>
+                    <p className="text-gray-300 mb-4">
+                      Collaborative task management tool with real-time updates
+                    </p>
+                    <div className="flex gap-4">
+                      <a
+                        className="text-sm px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+                        href="#"
+                      >
+                        View Project
+                      </a>
+                      <a
+                        className="text-sm px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+                        href="#"
+                      >
+                        GitHub
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Portfolio Generator */}
+                <div className="group relative aspect-video bg-linear-to-br from-purple-900/50 to-blue-900/50 rounded-xl overflow-hidden opacity-100">
+                  <img
+                    alt="Portfolio Generator"
+                    loading="lazy"
+                    decoding="async"
+                    className="object-cover transition-transform group-hover:scale-105 absolute h-full w-full inset-0"
+                    src="/_next/image?url=%2Flaptop.jpg&w=3840&q=75"
+                  />
+                  <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-300"></div>
+                  <div className="absolute inset-0 p-6 flex flex-col justify-end">
+                    <h3 className="text-xl font-bold mb-2">
+                      Portfolio Generator
+                    </h3>
+                    <p className="text-gray-300 mb-4">
+                      Dynamic portfolio generator for developers
+                    </p>
+                    <div className="flex gap-4">
+                      <a
+                        className="text-sm px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+                        href="#"
+                      >
+                        View Project
+                      </a>
+                      <a
+                        className="text-sm px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+                        href="#"
+                      >
+                        GitHub
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            </div>
+          </section>
       </div>
     </>
   );

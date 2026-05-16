@@ -33,7 +33,7 @@ const experiences: Experience[] = [
 
 function Experience() {
   return (
-    <div>
+    <section>
       <div className="py-6 bg-olive-400 dark:bg-gray-900 px-6">
         <div className="space-y-4 max-w-2xl mx-auto">
           <div>
@@ -71,7 +71,7 @@ function Experience() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
