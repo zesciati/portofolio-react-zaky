@@ -2,7 +2,7 @@ interface Experience {
     id: number;
     title: string;
     company: string;
-    startYear: number;
+    startYear: number | string;
     endYear: number | string;
     description: string;
 }
@@ -13,8 +13,8 @@ const experiences: Experience[] = [
     id: 1,
     title: "Frontend Dev",
     company: "PT Lumintu Logic",
-    startYear: 2024,
-    endYear: "2025",
+    startYear: "Sep 2024",
+    endYear: "Feb 2025",
     description:
       "Developing UI/UX and Functionality Fronted on tourism website yogyakarta (radyakartiyasa)",
   },
@@ -22,11 +22,20 @@ const experiences: Experience[] = [
     id: 2,
     title: "Frontend Dev & QA",
     company: "PT Unisia Tera Medika",
-    startYear: 2026,
-    endYear: "Present",
+    startYear: "Feb 2026",
+    endYear: "May 2026",
     description:
       "Designing Frontend admin website for JIH Hospital & making testcase for employee mobile application ",
   },
+  {
+    id: 3,
+    title: "Frontend Dev",
+    company: "CV Dexza Purnama",
+    startYear: "June 2026",
+    endYear: "Present",
+    description:
+      "Developed an online registration system for the Department of Tourism & Culture, building validated multi-step forms (ID, phone, certificate uploads) and admin pages with reactive forms for managing registration data, while ensuring data consistency and UI/UX quality across both sides. ",
+  }
   
   
 ];
