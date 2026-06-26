@@ -1,6 +1,6 @@
 import "../index.css";
 import FaceZaky from "../assets/pixelimage.png";
-import PdfCvZaky from "../assets/CV-ZAKY-1.pdf";
+import PdfCvZaky from "../assets/CV-ZAKY (6).pdf";
 import CoreSkill from "../components/CoreSkill";
 import Experience from "../components/Experience";
 // import Projects from "../components/Projects";
