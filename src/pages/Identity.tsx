@@ -110,7 +110,7 @@ function Identity() {
                       <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                     </svg>
                     <span className="text-sm text-gray-600 dark:text-gray-400">
-                      Yogyakarta, ID
+                      Solo, ID
                     </span>
                   </div>
                   <div className="flex items-center justify-center space-x-4 pt-2">
