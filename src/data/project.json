@@ -1,0 +1,12 @@
+[
+  {
+    "title": "coding bootcamp testimonials slider",
+    "desc": "Simple interactive slider built with React.js and Express.js",
+    "link_deploy": "https://coding-bootcamp-testimonials-slider.zakyabiyyu2003.workers.dev/",
+    "link_github": "https://github.com/zesciati/coding-bootcamp-testimonials-slider",
+    "Programming_language": {
+      "language-1": "ReactJS",
+      "language-2": "ExpressJS"
+    }
+  }
+]

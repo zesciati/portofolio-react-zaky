@@ -3,7 +3,7 @@ import FaceZaky from "../assets/pixelimage.png";
 import PdfCvZaky from "../assets/_CV-ZAKY (Updated  2).pdf";
 import CoreSkill from "../components/CoreSkill";
 import Experience from "../components/Experience";
-// import Projects from "../components/Projects";
+import Projects from "../components/Projects";
 import { useState } from "react";
 
 function Identity() {
@@ -186,9 +186,9 @@ function Identity() {
           </div>
         </div>
       </main>
-      {/* <section className="antialiased">
+      <section className="antialiased">
         <Projects />
-      </section> */}
+      </section>
     </div>
   );
 }
