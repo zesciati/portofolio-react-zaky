@@ -16,7 +16,7 @@ function Projects() {
                 loading="lazy"
                 decoding="async"
                 className="object-cover transition-transform group-hover:scale-105 absolute h-full w-full inset-0"
-                src="/public/coding-bootcamp-testimonials-slider-imagePortfolio-1.png"
+                src={project.thumbnail}
               />
               <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-300"></div>
               <div className="absolute inset-0 p-6 flex flex-col justify-end">
@@ -46,14 +46,14 @@ function Projects() {
                   <a
                     className="text-sm px-4 py-2 bg-[#59BFD7]/30 hover:bg-[#59BFD7]/80 rounded-full transition-colors "
                   >
-                    {project.Programming_language['language-1']} 
+                    {project.Programming_language} 
                   </a>
-                  <a
+                  {/* <a
                     className="text-sm px-4 py-2 bg-black/30 hover:bg-black/80 rounded-full transition-colors "
                   >
                     {project.Programming_language['language-2']} 
                     
-                  </a>
+                  </a> */}
                 </div>
                 </div>
               </div>

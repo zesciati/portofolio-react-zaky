@@ -1,12 +1,26 @@
 [
   {
-    "title": "coding bootcamp testimonials slider",
+    "title": "Coding bootcamp testimonials slider",
     "desc": "Simple interactive slider built with React.js and Express.js",
     "link_deploy": "https://coding-bootcamp-testimonials-slider.zakyabiyyu2003.workers.dev/",
     "link_github": "https://github.com/zesciati/coding-bootcamp-testimonials-slider",
-    "Programming_language": {
-      "language-1": "ReactJS",
-      "language-2": "ExpressJS"
-    }
+    "Programming_language": "ReactJS, ExpressJS, TailwindCSS",
+    "thumbnail":"/public/coding-bootcamp-testimonials-slider-imagePortfolio-1.png"
+  },
+  {
+    "title": "Advice generator app main",
+    "desc": "Generating advice from API using adviceslip.com",
+    "link_deploy": "https://advice-generator-app-main-6co.pages.dev/",
+    "link_github": "https://github.com/zesciati/advice-generator-app-main",
+    "Programming_language": "HTML, CSS, JAVASCRIPT",
+    "thumbnail":"/public/advice-generator.png"
+  },
+  {
+    "title": "Product List with Cart",
+    "desc": "An accessible, fully responsive shopping cart app where users can add, adjust, and remove items, confirm their order, and start over.",
+    "link_deploy": "https://product-list-with-cart-djl.pages.dev/",
+    "link_github": "https://gitlab.com/zakyabiyyu2003/product-list-with-cart",
+    "Programming_language": "VueJS, TailwindCSS",
+    "thumbnail":"/public/product-list-with-cart-thumbnail.png"
   }
 ]
