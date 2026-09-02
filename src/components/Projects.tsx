@@ -32,7 +32,7 @@ function Projects() {
                     className="text-sm px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
                     href={project.link_deploy}
                   >
-                    View Project
+                    View Projeck
                   </a>
                   <a
                     className="text-sm px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
