@@ -49,4 +49,5 @@ bun run build
 
 # note
 
-1. menggunakan supabase hanya untuk resume saja karena itu yang paling sering berubah
+1. menggunakan supabase hanya untuk resume saja karena itu yang paling sering berubah pada Identity.tsx
+   a.Supabase(zesciati's Project) -> Table editor -> resumes(table) -> kolom resume terdapat url resume(Storage(sidebar) -> my-resumes -> titik 3  -> get url)
