@@ -2,6 +2,7 @@
 - ReactJS
 - Vite
 - TailwindCSS
+- supabase
 
 # Folder Tree
 
@@ -44,3 +45,8 @@ bun dev
 ```sh
 bun run build
 ```
+
+
+# note
+
+1. menggunakan supabase hanya untuk resume saja karena itu yang paling sering berubah

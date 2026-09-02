@@ -4,13 +4,35 @@ import PdfCvZaky from "../assets/_CV-ZAKY (Updated  2).pdf";
 import CoreSkill from "../components/CoreSkill";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { supabase } from "../lib/supabase";
+
+interface Resume {
+  id: number;
+  resume: string;
+}
 
 function Identity() {
   const [isLight, setLight] = useState(false);
   const toggleTheme = () => {
     setLight(!isLight);
   };
+
+  const [resumeUrl, setResumeUrl] = useState<string>("");
+
+  useEffect(() => {
+    const fetchResume = async () => {
+      const { data, error } = await supabase
+        .from("resumes")
+        .select("*")
+        .single(); // since there's only one row
+
+      if (error) console.error(error);
+      else setResumeUrl((data as Resume).resume);
+    };
+
+    fetchResume();
+  }, []);
 
   return (
     <div
@@ -27,13 +49,13 @@ function Identity() {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="currentColor"
             className="size-7"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
             />
           </svg>
@@ -146,33 +168,38 @@ function Identity() {
                     </a>
                   </div>
                   <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 opacity-75 transform-none">
-                    <a
-                      href={PdfCvZaky}
-                      download=""
-                      className="group flex items-center gap-2 px-6 py-3 bg-white/25 dark:bg-white/5 rounded-full hover:bg-white/30 dark:hover:bg-white/10 transition-colors w-full sm:w-auto "
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        className="size-4 text-gray-700 dark:text-gray-300"
+                    {resumeUrl && (
+                      <a
+                        href={resumeUrl}
+                        download=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group flex items-center gap-2 px-6 py-3 bg-white/25 dark:bg-white/5 rounded-full hover:bg-white/30 dark:hover:bg-white/10 transition-colors w-full sm:w-auto"
                       >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
-                        />
-                      </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="1.5"
+                          stroke="currentColor"
+                          className="size-4 text-gray-700 dark:text-gray-300"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
+                          />
+                        </svg>
 
-                      <span className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                        View Resume
-                      </span>
-                    </a>
+                        <span className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                          View Resume
+                        </span>
+                      </a>
+                    )}
                   </div>
                   <a
-                    href="https://portfolio-zak.pages.dev/" className="dark:hover:text-orange-300 border rounded-2xl p-2 hover:text-orange-900"
+                    href="https://portfolio-zak.pages.dev/"
+                    className="dark:hover:text-orange-300 border rounded-2xl p-2 hover:text-orange-900"
                   >
                     Project
                   </a>

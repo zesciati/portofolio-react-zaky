@@ -47,7 +47,7 @@ function CoreSkill() {
               </div>
               <div className="flex flex-wrap gap-1.5">
                 {languages.map((language) => (
-                  <span className="px-2.5 py-1 text-sm bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full ring-1 ring-gray-200 dark:ring-gray-700">
+                  <span className="px-2.5 py-1 text-sm bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full ring-1 ring-gray-200 dark:ring-gray-700" key={language}>
                     {language}
                   </span>
                 ))}
@@ -78,7 +78,7 @@ function CoreSkill() {
               </div>
               <div className="flex flex-wrap gap-1.5">
                 {backends.map((backend) => (
-                  <span className="px-2.5 py-1 text-sm bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full ring-1 ring-gray-200 dark:ring-gray-700">
+                  <span className="px-2.5 py-1 text-sm bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full ring-1 ring-gray-200 dark:ring-gray-700" key={backend}>
                     {backend}
                   </span>
                 ))}
@@ -107,7 +107,7 @@ function CoreSkill() {
               </div>
               <div className="flex flex-wrap gap-1.5">
                 {tools.map((tool) => (
-                  <span className="px-2.5 py-1 text-sm bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full ring-1 ring-gray-200 dark:ring-gray-700">
+                  <span className="px-2.5 py-1 text-sm bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full ring-1 ring-gray-200 dark:ring-gray-700" key={tool}>
                     {tool}
                   </span>
                 ))}
