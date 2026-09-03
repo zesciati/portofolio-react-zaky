@@ -13,7 +13,7 @@
     "link_deploy": "https://advice-generator-app-main-6co.pages.dev/",
     "link_github": "https://github.com/zesciati/advice-generator-app-main",
     "Programming_language": "HTML, CSS, JAVASCRIPT",
-    "thumbnail":"/public/advice-generator.png"
+    "thumbnail":"/advice-generator.png"
   },
   {
     "title": "Product List with Cart",
@@ -21,6 +21,6 @@
     "link_deploy": "https://product-list-with-cart-djl.pages.dev/",
     "link_github": "https://gitlab.com/zakyabiyyu2003/product-list-with-cart",
     "Programming_language": "VueJS, TailwindCSS",
-    "thumbnail":"/public/product-list-with-cart-thumbnail.png"
+    "thumbnail":"/product-list-with-cart-thumbnail.png"
   }
 ]
