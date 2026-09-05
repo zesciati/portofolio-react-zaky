@@ -23,4 +23,12 @@
     "Programming_language": "VueJS,TailwindCSS",
     "thumbnail":"/product-list-with-cart-thumbnail.png"
   }
+  ,{
+    "title": "Art Gallery Website",
+    "desc": "An art gallery with location.",
+    "link_deploy": "https://art-gallery-website.zakyabiyyu2003.workers.dev/",
+    "link_github": "https://github.com/zesciati/art-gallery-website",
+    "Programming_language": "ReactJS,ViteJS,TailwindCSS",
+    "thumbnail":"/art gallery website.png"
+  }
 ]
