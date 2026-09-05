@@ -196,12 +196,12 @@ function Identity() {
                       </a>
                     )}
                   </div>
-                  <a
+                  {/* <a
                     href="https://portfolio-zak.pages.dev/"
                     className="dark:hover:text-orange-300 border rounded-2xl p-2 hover:text-orange-900"
                   >
                     Project
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
