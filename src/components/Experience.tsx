@@ -32,7 +32,7 @@ const experiences: Experience[] = [
     title: "Frontend Dev",
     company: "CV Dexza Purnama",
     startYear: "June 2026",
-    endYear: "Present",
+    endYear: "July 2026",
     description:
       "Developed an online registration system for the Department of Tourism & Culture, building validated multi-step forms (ID, phone, certificate uploads) and admin pages with reactive forms for managing registration data, while ensuring data consistency and UI/UX quality across both sides. ",
   }
