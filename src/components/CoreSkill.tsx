@@ -1,5 +1,5 @@
 const languages = ["Typescript", "Javascript", "Html", "CSS"];
-const backends = ["Node.js", "Express.js", "MySQL", "Directus"];
+const backends = ["Node.js", "Express.js", "MySQL", "Directus", "Supabase"];
 const tools = [
   "Github",
   "Git",
